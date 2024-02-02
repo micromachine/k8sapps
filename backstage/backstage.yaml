@@ -21,7 +21,7 @@ spec:
     spec:
       containers:
         - name: backstage
-          image: busybox
+          image: nginx:1.14.2
           imagePullPolicy: IfNotPresent
           ports:
             - name: http
