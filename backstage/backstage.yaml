@@ -21,7 +21,7 @@ spec:
     spec:
       containers:
         - name: backstage
-          image: roadiehq/community-backstage-image:latest
+          image: busybox
           imagePullPolicy: IfNotPresent
           ports:
             - name: http
