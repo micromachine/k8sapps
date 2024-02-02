@@ -21,7 +21,7 @@ spec:
     spec:
       containers:
         - name: backstage
-          image: nginx:1.14.2
+          image: roadiehq/community-backstage-image:latest
           imagePullPolicy: IfNotPresent
           ports:
             - name: http
