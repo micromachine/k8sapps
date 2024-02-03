@@ -1,0 +1,28 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: argocd-dashboard
+  namespace: argocd
+  labels:
+    k8s-app: argocd-dashboard
+  annotations:
+    nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"
+    nginx.ingress.kubernetes.io/rewrite-target: /
+    cert-manager.io/cluster-issuer: le-prod
+spec:
+  ingressClassName: nginx
+  tls:
+    - hosts:
+        - backstage.nucleos.net.pl
+      secretName: certificate-prod-argocd
+  rules:
+    - host: backstage.nucleos.net.pl
+      http:
+        paths:
+          - pathType: Prefix
+            path: /
+            backend:
+              service:
+                name: backstage
+                port:
+                  number: 80
