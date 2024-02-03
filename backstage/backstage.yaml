@@ -31,3 +31,8 @@ spec:
                 name: postgres-secrets
             - secretRef:
                 name: backstage-secrets
+          env:
+          - name: POSTGRES_PORT
+            value: "5432"
+          - name: POSTGRES_HOST
+            value: "postgres.backstage.svc.cluster.local"
