@@ -21,7 +21,7 @@ spec:
     spec:
       containers:
         - name: backstage
-          image: micromachine/backstage:1.22.20
+          image: micromachine/backstage:1.22.21
           imagePullPolicy: IfNotPresent
           ports:
             - name: http
