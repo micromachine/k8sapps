@@ -14,7 +14,7 @@ spec:
   tls:
     - hosts:
         - backstage.nucleos.net.pl
-      secretName: certificate-prod-argocd
+      secretName: certificate-prod-backstage
   rules:
     - host: backstage.nucleos.net.pl
       http:
