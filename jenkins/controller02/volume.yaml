@@ -39,7 +39,7 @@ metadata:
   name: jenkins-pv-claim
   namespace: controller02
 spec:
-  storageClassName: local-storage
+  storageClassName: microk8s-hostpath
   accessModes:
     - ReadWriteOnce
   resources:
