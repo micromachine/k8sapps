@@ -39,7 +39,7 @@ metadata:
   name: jenkins-pv-claim
   namespace: controller01
 spec:
-  storageClassName: local-storage
+  storageClassName: manual
   accessModes:
     - ReadWriteOnce
   resources:
