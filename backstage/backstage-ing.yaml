@@ -14,7 +14,7 @@ spec:
   tls:
     - hosts:
         - bs.nucleos.net.pl
-      secretName: certificate-prod-backstage
+      secretName: certificate-prod-backstage2
   rules:
     - host: bs.nucleos.net.pl
       http:
