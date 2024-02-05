@@ -13,10 +13,10 @@ spec:
   ingressClassName: public
   tls:
     - hosts:
-        - backstage.nucleos.net.pl
+        - bs.nucleos.net.pl
       secretName: certificate-prod-backstage
   rules:
-    - host: backstage.nucleos.net.pl
+    - host: bs.nucleos.net.pl
       http:
         paths:
           - pathType: Prefix
